@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var number = prompt("enter the number: ");
+            var flag = true;
+            for (var i = 2; i <= Math.sqrt(number); i++){
+                if (number%i == 0){
+                    flag = false;
+                }
+            }
+            if (flag == true && number>=2){
+                console.log(number + " is a prime number")
+            }else{
+                console.log(number + " is not a prime number")
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
